@@ -1,0 +1,33 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+
+<form action="/users/submitInquiryForm" enctype="multipart/form-data" method="POST" >
+    <div>
+        <label>Name</label>
+        <input type="text" 
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder="Enter Name">
+    </div>
+
+    <div>
+        <label>Contact no.</label>
+        <input type="number"  
+        id="number"
+        name="number"
+        class="form-control"
+        placeholder="Enter number">
+    </div>
+    <div>
+        <lable>Image</lable>
+        <input type="file"
+        id="file"
+        name="file"
+        class="form-control"
+        placeholder="choose image">
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
